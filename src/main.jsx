@@ -9,6 +9,10 @@ import {
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
+    <StrictMode>
     <App />
-  </BrowserRouter>,
+    </StrictMode>
+  {/* Strict Mode React v18'de Router v5.2 ile düzgün çalışmadığı için BrowserRouter'ın içine konuldu. */}
+  </BrowserRouter>
+  ,
 )
